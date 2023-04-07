@@ -70,7 +70,7 @@ console.log(`${totalAcres} acres this week`);
 
 // CODE HERE
 
-let averageDailyAcres = totalAcres / fujiAcres.length; //
+let averageDailyAcres = totalAcres / fujiAcres.length; // DIVIDED ACRES BY DAYS NUMBER
 console.log(`${averageDailyAcres} acres per day`);
 
 // PROBLEM 3
@@ -107,6 +107,7 @@ let days = 0;
 
 // CODE HERE
 
+// ACRESLEFT > 0 (NOT DAYS BECAUSE SHOULD BE > 0 ALL TIME IF DAYS USED WILL INCREASE IT'S VALUE)
 while (acresLeft > 0) {
   days++;
   acresLeft -= averageDailyAcres;
@@ -144,6 +145,8 @@ let fujiTons = [];
 let galaTons = [];
 let pinkTons = [];
 
+// SINCE ALL ARRAYS HAVE 7 DAYS, WE CAN USE THE SAME FOR LOOP GET THE VALUES OF THE ACRES ARRAYS, MULTIPLY THEM BY 6.5 AND PUSH THE NEW VALUES TO THE EMPTY ARRAYS BY USING PUSH METHOD.
+
 for (let i = 0; i < fujiAcres.length; i++) {
   fujiTons.push(fujiAcres[i] * 6.5);
   galaTons.push(galaAcres[i] * 6.5);
@@ -170,10 +173,12 @@ console.log(fujiTons, galaTons, pinkTons);
 
 // CODE HERE
 
+// SINCE THE PROBLEM DOES NOT REQUIRE AN ARRAY BUT A NUMBER, THIS VARIABLES WILL BE INITIALIZED TO 0
 let fujiPounds = 0;
 let galaPounds = 0;
 let pinkPounds = 0;
 
+// AGAIN ALL THE ARRAYS HAVE 7 DAYS SO THE LOOP WILL WORK FOR THE 3 ARRAYS. THIS TIME WE GET THE VALUES FROM THE TONS ARRAYS AND STARTING ADDING THEM TO THEIR RESPECTIVE POUNDS VARIABLE. ONCE THE ARRAY REACH THE INDEX 6 WE MULTIPLY THE RESULT TO 2000 AND ASIGN IT TO THE SAME VARIABLE.
 for (let i = 0; i < fujiAcres.length; i++) {
   fujiPounds += fujiTons[i];
   galaPounds += galaTons[i];
@@ -205,6 +210,7 @@ console.log("Tons: ", fujiPounds, galaPounds, pinkPounds);
 
 // CODE HERE
 
+// HERE WE JUST MULTIPLY THE POUNDS BY THE RESPECTIVE PRICE
 let fujiProfit = fujiPounds * fujiPrice;
 let galaProfit = galaPounds * galaPrice;
 let pinkProfit = pinkPounds * pinkPrice;
@@ -223,5 +229,6 @@ console.log("Profit: ", fujiProfit, galaProfit, pinkProfit);
 
 // CODE HERE
 
+// AND HERE WE JUST ADD  ALL THE PROFITS
 let totalProfit = fujiProfit + galaProfit + pinkProfit;
 console.log(`Total Profit: ${totalProfit}`);
