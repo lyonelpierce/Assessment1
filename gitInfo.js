@@ -10,6 +10,7 @@
 */
 
 //CODE HERE
+let gitDefinition = `Git is a Version Control System that helps us to keep track of changes made to our files or directories.`;
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -18,6 +19,8 @@
 */
 
 //CODE HERE
+let gitHubDefinition =
+  "GitHub provides a hosting service that allow us to store our git repositories on their servers so we can access them anywhere with an internet connection.";
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -26,6 +29,8 @@
 */
 
 //CODE HERE
+let gitInitDefinition =
+  "git init initialize a new GIT repository in the directory that we are located.";
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -34,6 +39,8 @@
 */
 
 //CODE HERE
+let gitCloneDefinition =
+  "git clone allows us to create a copy of an existing git repository";
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -41,7 +48,9 @@
     It should be a string containing your best definition of what 'git status' does.
 */
 
-//CODE HERE
+//CODE
+let gitStatusDefinition =
+  "git status shows the current status of our git reportory, it allow us to see which files have been modified.";
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -53,6 +62,9 @@
 */
 
 //CODE HERE
+let gitAddDefinition =
+  "git add will add the changes we have made to the staging area.";
+let gitAddCode = "git add .";
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -64,7 +76,9 @@
 */
 
 //CODE HERE
-
+let gitCommitDefinition =
+  "git commit will permanently save the changes we have made to the local repository.";
+let gitCommitCode = 'git commit -m "initial commit"';
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -73,3 +87,6 @@
 */
 
 //CODE HERE
+
+let gitPushDefinition =
+  "git push is used to upload our local git repository to GitHub";
