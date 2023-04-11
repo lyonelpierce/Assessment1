@@ -50,7 +50,7 @@ const pinkPrice = 0.55;
 // CODE HERE
 let totalAcres = 0;
 
-for (let i = 0; i < fujiAcres.length; i++) {
+for (let i = 0; i <= fujiAcres.length; i++) {
   totalAcres += fujiAcres[i] + galaAcres[i] + pinkAcres[i];
 }
 
@@ -183,12 +183,10 @@ for (let i = 0; i < fujiAcres.length; i++) {
   fujiPounds += fujiTons[i];
   galaPounds += galaTons[i];
   pinkPounds += pinkTons[i];
-  if (i === fujiAcres.length - 1) {
-    fujiPounds *= 2000;
-    galaPounds *= 2000;
-    pinkPounds *= 2000;
-  }
 }
+fujiPounds *= 2000;
+galaPounds *= 2000;
+pinkPounds *= 2000;
 
 console.log("Tons: ", fujiPounds, galaPounds, pinkPounds);
 
